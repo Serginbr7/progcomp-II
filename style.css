@@ -14,20 +14,36 @@ body {
 header {
   background: #558b2f;
   color: #fff;
-  padding: 30px 0;
-  text-align: center;
+  padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
+  display: flex;
+  justify-content: space-between; /* Adicione esta linha */
+  align-items: center;          /* Adicione esta linha */
 }
 
 .titulo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0;
-  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  letter-spacing: 1.1px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
   transition: color 0.3s ease;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.links-header{
+  display: inline-flex;
+  align-items: start;
+  color: #c8e6c9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-right: 10px; 
+  margin-top: 4.1em;
 }
 
 .href {
@@ -50,8 +66,9 @@ header {
 
 .como-usar:hover {
   color: #388e3c;
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  text-decoration: underline; 
 }
+
 
 main {
   display: flex;
